@@ -65,10 +65,10 @@ def processSignup():
        return '<!DOCTYPE html> ' \
            '<html lang="es">' \
            '<head>' \
-           '<title> Home - SocNet </title>' \
+           '<title> Inicio - SocialED </title>' \
            '</head>' \
            '<body> <div id ="container">' \
-		   '<a href="/"> SocNet </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
+		   '<a href="/"> SocialED </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
            '<h1>Data from Form: Sign Up</h1>' \
            '<form><label>Nickame: ' + request.form['nickname'] + \
 	       '</label><br><label>email: ' + request.form['email'] + \
@@ -92,10 +92,10 @@ def processHome():
 	return '<!DOCTYPE html> ' \
            '<html lang="es">' \
            '<head>' \
-           '<title> Home - SocNet </title>' \
+           '<title> Inicio - SocialED </title>' \
            '</head>' \
            '<body> <div id="container">' \
-		   '<a href="/"> SocNet </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
+		   '<a href="/"> SocialED </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
            '<h1>Hi, How are you?</h1>' \
                 	'<form action="processHome" method="post" name="home"> ' \
 			'<label for="message">Say something:</label><div class="inputs">' \
