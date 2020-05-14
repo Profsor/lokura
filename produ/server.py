@@ -40,10 +40,10 @@ def processLogin():
     return '<!DOCTYPE html> ' \
            '<html lang="es">' \
            '<head>' \
-           '<title> Home - SocNet </title>' \
+           '<title> Acceso - SocialED </title>' \
            '</head>' \
            '<body> <div id ="container">' \
-           '<a href="/"> SocNet </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
+           '<a href="/"> SocialED </a> | <a href="home"> Inicio </a> | <a href="login"> Acceso </a> | <a href="signup"> Registro </a>' \
            '<h1>Data from Form: Login</h1>' \
            '<form><label>email: ' + request.form['email'] + \
            '</label><br><label>passwd: ' + request.form['passwd'] + \
@@ -65,10 +65,10 @@ def processSignup():
     return '<!DOCTYPE html> ' \
            '<html lang="es">' \
            '<head>' \
-           '<title> Inicio - SocialED </title>' \
+           '<title> Registro - SocialED </title>' \
            '</head>' \
            '<body> <div id ="container">' \
-           '<a href="/"> SocialED </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
+           '<a href="/"> SocialED </a> | <a href="home"> Inicio </a> | <a href="login"> Acceso </a> | <a href="signup"> Registro </a>' \
            '<h1>Data from Form: Sign Up</h1>' \
            '<form><label>Nickame: ' + request.form['nickname'] + \
            '</label><br><label>email: ' + request.form['email'] + \
@@ -95,17 +95,17 @@ def processHome():
            '<title> Inicio - SocialED </title>' \
            '</head>' \
            '<body> <div id="container">' \
-           '<a href="/"> SocialED </a> | <a href="home"> Home </a> | <a href="login"> Log In </a> | <a href="signup"> Sign Up </a>' \
-           '<h1>Hi, How are you?</h1>' \
+           '<a href="/"> SocialED </a> | <a href="home"> Inicio </a> | <a href="login"> Acceso </a> | <a href="signup"> Registro </a>' \
+           '<h1>Hola internauta, qué tal estás?</h1>' \
            '<form action="processHome" method="post" name="home"> ' \
-           '<label for="message">Say something:</label><div class="inputs">' \
+           '<label for="message">Escribe algo...</label><div class="inputs">' \
            '<input id="message" maxlength="128" name="message" size="80" type="text" required="true" value=""/>' \
            '<input id="last" type="hidden" name="last" required="true" value="' + request.form['last'] + '<br>' + \
            request.form['message'] + '">' \
                                      '</div>' \
                                      '<div class="inputs">' \
                                      '<input id="post_submit" name="post_submit" type="submit" value="Post!"/>' \
-                                     '<br><br>Previous Posts: <br>' + request.form['last'] + '<br>' + request.form[
+                                     '<br><br>Escritos anteriores: <br>' + request.form['last'] + '<br>' + request.form[
                'message'] + \
            '</form>' \
            '</div></div>' \
